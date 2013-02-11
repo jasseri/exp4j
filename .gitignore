@@ -1,0 +1,12 @@
+.gitattributes
+.classpath
+.project
+.settings
+.target
+.cvsignore
+CVS
+.packaging
+*.log*
+/target
+.pmd
+bin

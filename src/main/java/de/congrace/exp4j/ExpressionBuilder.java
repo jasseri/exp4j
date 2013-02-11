@@ -43,7 +43,7 @@ public class ExpressionBuilder {
 	 *            the expression to evaluate 
 	 */
 	public ExpressionBuilder(String expression) {
-		if (expression.trim().isEmpty()) {
+		if (isStringEmpty(expression)) {
 			throw new IllegalArgumentException("Expression can not be empty!.");
 		}
 		this.expression = expression;
@@ -390,5 +390,15 @@ public class ExpressionBuilder {
 	public ExpressionBuilder withExpression(String expression) {
 		this.expression = expression;
 		return this;
+	}
+	
+	private boolean isStringEmpty(String str) {
+	    if (str == null) {
+	        return true;
+	    }
+	    if (str.trim().length() == 0) {
+	        return true;
+	    }
+	    return false;
 	}
 }
