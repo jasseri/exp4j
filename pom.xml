@@ -9,9 +9,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<scm>
-		<connection>scm:git:http://github.com/fasseg/exp4j.git</connection>
-		<developerConnection>scm:git:https://github.com/fasseg/exp4j.git</developerConnection>
-		<url>https://github.com/fasseg/exp4j</url>
+		<connection>scm:git:http://github.com/jasseri/exp4j.git</connection>
+		<developerConnection>scm:git:https://github.com/jasseri/exp4j.git</developerConnection>
+		<url>https://github.com/jasseri/exp4j</url>
 	</scm>
 	<url>https://exp4j.congrace.de</url>
 	<issueManagement>
@@ -54,28 +54,18 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	
 	<distributionManagement>
 		<snapshotRepository>
-			<uniqueVersion>false</uniqueVersion>
-			<id>central-snapshots</id>
-			<name>snapshots</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-			<layout>default</layout>
+			<id>snapshots-repo</id>
+			<url>https://github.com/jasseri/exp4j/raw/master/deployment/snapshots</url>
 		</snapshotRepository>
 		<repository>
-			<uniqueVersion>false</uniqueVersion>
-			<id>central-releases</id>
-			<name>releases</name>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-			<layout>default</layout>
-		</repository>
-		<downloadUrl>http://projects.congrace.de/exp4j</downloadUrl>
-		<site>
-			<id>congrace.exp4j</id>
-			<name>congrace.de - exp4j</name>
-			<url>scpexe://congrace.de/opt/www/exp4j</url>
-		</site>
+			<id>repo</id>
+			<url>https://github.com/jasseri/exp4j/raw/master/deployment/releases</url>
+		</repository>				
 	</distributionManagement>
+	
 	<licenses>
 		<license>
 			<name>Apache License 2.0</name>
