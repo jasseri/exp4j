@@ -5,3 +5,5 @@ exp4j math expression evaluator for the Java programming language, capable of ev
 expression, small in size, without any external libraries and simple to use.
 
 check out http://projects.congrace.de/exp4j/index.html
+
+the purpose of this fork is to get exp4j running on Java 5.
